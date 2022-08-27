@@ -1,0 +1,15 @@
+/* Add a black background color to the top navigation */
+#navbarlinks {
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  top: 0;
+  display: flex;
+  float: right;
+  align-content: flex-end;
+  justify-content: space-between;
+  position: fixed;
+  text-decoration: none;
+}
+

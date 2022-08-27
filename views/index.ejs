@@ -2,23 +2,76 @@
 <html lang="en">
 
 <head>
-  <title>Home Page</title>
+  <title>Mario's List</title>
 
-  <meta charset="UTF-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
   <link rel="stylesheet" href="/vendor/border-box.css" />
   <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/nav.css" />
 
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script defer src="/scripts/app.js"></script>
 </head>
 
 <body>
-  <h1>Have fun! 🥔</h1>
+  <nav>
+    <div id="navlogo">
+      <span><a href="http://localhost:8080"><img
+            src="https://fontmeme.com/permalink/220827/af0c2ad64ef606ff785badeebe948d07.png"></a></span>
+          </div>
+
+      <div id="navbarlinks" class="nav-bar-links">
+        <a href="/">Home&nbsp;&nbsp;</a>
+        <a href="">Favourites&nbsp;&nbsp;</a>
+        <a href="">Log in&nbsp;&nbsp;</a>
+        <a href="">Sign Up</a>
+      </div>
+  </nav>
+
+  <h1>Buy and sell your favourite video games!</h1>
+
+
+
+  <form method="get" id="search_video_game_listings">
+    <div class="search-form">
+      <label for="search-listing">Name</label>
+      <input type="text" name="search" placeholder="Search Video Games">
+    </div>
+
+    <div class="search-by-price">
+      <label for="search-by-lowest-price">Lowest Price</label>
+      <input type="number" name="lowest-price" placeholder="Lowest Price"><br>
+      <label for="search-by-highest-price">Highest Price</label>
+      <input type="number" name="highest-price" placeholder="Highest Price">
+    </div>
+    <div class="search-by-rating">
+      <label for="search-by-minimum-review">Lowest Review</label>
+      <input type="number" name="minimum-review" placeholder="Lowest Review">
+
+    </div>
+    <button class="search-button" type="submit">Search</button>
+  </form>
+
+  <div class="feature-1">
+    <h3>Feature Item 1</h3><br>
+  </div>
+
+  <div class="feature-2">
+    <h3>Feature Item 2</h3><br>
+  </div>
+
+  <div class="feature-3">
+    <h3>Feature Item 3</h3><br>
+  </div>
+
+
+
+
 </body>
 
 </html>
