@@ -1,12 +1,17 @@
-INSERT INTO video_game_listings (name, company, platform, description, price, cover_photo_rul, is_stocked, adminid) VALUES
-
-('sengoku', 'capcom', 'wii', 'life is journey', 5000, 'https://en.wikipedia.org/wiki/File:Sengoku.jpg', 'photourl01', ture, 7)
-('zelda', 'nintendo', 'nintenco', 'the die is cast', 6700, 'https://store.nintendo.co.kr/70010000009367', 'photourl02', true, 2)
-('castlevania', 'konami', 'playstation', 'be brave', 4500, 'https://castlevania.fandom.com/wiki/Castlevania%28animated_series%29', 'photourl03', false, 10)
-('metal gear solid', 'konama', 'playstation', 'every cloud has a silver lining', 2000, 'https://www.gog.com/game/metal_gear_solid', 'photourl04', ture, 9)
-('chrono trigger', 'squaresoft', 'super nintendo', 'hang in there', 3200, 'http://sleepybear.com/', 'photourl05', false, 12)
-('metroid', 'nintendo', 'wii', 'this is how life is', 8600, 'http://appstore.com/', 'photourl06', false, 8)
-('monster hunter', 'capcom', '3ds', 'live positive', 1900, 'http://jamcookies.com/', 'photourl07', true, 1)
-('resident evil', 'capcom', 'gamecube', 'habit is a second nature', 12000, 'http://buywhy.com/', 'photourl08', true, 15)
-('super mario world', 'nintendo', 'super nintendo', 'time is gold', 1000, 'http://bookroad.com/', 'photourl09', true, 45)
-('mario bros.3', 'nintendo', 'nes', 'time waits for no one', 3400, 'http://raincouver.com/', 'photourl10', false, 34);
+INSERT INTO video_game_listings (name, company, platform, description, price, cover_photo_url, is_stocked, admin_id)
+VALUES
+('Spider-Man Remastered', 'Insomniac Games', 'PS4', 'Play as an experienced Peter Parker, fighting big crime and iconic villains in Marvels New York', 5000, 'https://static.wikia.nocookie.net/spidermanps4/images/d/d4/Marvel%27s_Spider-Man_front_cover_%28US%29.png/revision/latest?cb=20201003182432', true, 1)
+('Zelda', 'Nintendo', 'Nintendo', 'Breath of the Wild, a boundary-breaking new game in the acclaimed series.', 6700, 'https://assets-prd.ignimgs.com/2022/06/14/zelda-breath-of-the-wild-1655249167687.jpg?width=300&crop=1%3A1%2Csmart', true, 2)
+('Castlevania', 'Konami', 'PS4', 'Lords of Shadow, the origin of Dracula and his legendary connection with the Belmonts was revealed.', 4500, 'https://static.wikia.nocookie.net/castlevania/images/e/e0/Castlevania_-_Netflix_-_02.jpg/revision/latest?cb=20170630190429', false, 3)
+('Metal gear solid', 'Konama', 'PS4', ' The Soviet invasion of Afghanistan has brought a new edge to the Cold War', 2000, 'https://www.imdb.com/title/tt0180825/mediaviewer/rm2189671937/?ref_=tt_ov_i', true, 9)
+('Chrono Trigger', 'Squaresoft', 'Super nintendo', 'Young Crono must travel through time to rescue his unfortunate companion from an intricate web of past and present perils', 3200, 'https://cdn.akamai.steamstatic.com/steam/apps/613830/header.jpg?t=1646911047', false, 12)
+('Metroid', 'Nintendo', 'Wii', 'The Metroid™ Fusion game when she descends upon planet ZDR to investigate a mysterious transmission sent to the Galactic Federation', 8600, 'https://m.media-amazon.com/images/I/816ZIy1Y0-L._SY445_.jpg', false, 8)
+('Monster Hunter', 'Capcom', 'Xbox', 'Monster Hunter Stories 2: Wings of Ruin offers both RPG and Monster Hunter fans a unique new experience with a rich storyline', 1900, 'https://cdn.akamai.steamstatic.com/steam/apps/582010/header.jpg?t=1661218531', true, 1)
+('Resident Evil', 'Capcom', 'Gamecube', 'The next generation of survival horror rises in the form of Resident Evil Village, the eighth major entry in the Resident Evil series', 12000, 'https://assets.reedpopcdn.com/project-w-dbd.jpg/BROK/resize/690%3E/format/jpg/quality/75/project-w-dbd.jpg', true, 15)
+('Super Mario World', 'Nintendo', 'Super nintendo', 'Pounce and climb through dozens of colorful stages! Mario (and his friends) can use power-ups like the Super Bell', 1000, 'https://user-images.githubusercontent.com/12776674/122607515-0e8d4600-d051-11eb-900b-1b072f5bbbad.png', true, 45)
+('Mario Bros.3', 'Nintendo', 'Nintendo', ' A competitive clash comes to the Mushroom Kingdom! Super Mario Bros', 3400, 'https://static.wikia.nocookie.net/mario/images/7/71/Super_Mario_Bros._3_front_cover_%28US%29.png/revision/latest/scale-to-width-down/1200?cb=20190808190744', false, 34);
+('Elden Ring', 'Bandai', 'PC', ' A New World Created By Hidetaka Miyazaki And George R. R. Martin. ELDEN RING, developed by FromSoftware, Inc', 6000, 'https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg?t=1654259241', true, 31);
+('God of War', 'playstation', 'PS4', 'His vengeance against the gods of Olympus far behind him, Kratos now lives as a man in the lands of Norse Gods and monsters', 54000, 'https://images-na.ssl-images-amazon.com/images/I/51qpkdw1+8L._SX377_BO1,204,203,200_.jpg', true, 27);
+('Rogue Legacy', 'Cella Door', 'Xbox', 'Every child is unique. One child might be colorblind, another might have tourettes-- they could even be a dwarf', 61000, 'https://cdn.akamai.steamstatic.com/steam/apps/1253920/header.jpg?t=1661199818', true, 28);
+('Xenoblade Chronicles', 'Nintendo', 'Switch', 'Fighting to liveand living to fight - A brand new RPG adventure awaits in Xenoblade Chronicles 3', 58000, 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_700/ncom/en_US/games/switch/x/xenoblade-chronicles-definitive-edition-switch/hero', false, 11);
+('Sentinels', 'Sega', 'Switch', 'Vanillaware signature artistic shine and gorgeous aesthetics will bring the characters and story of 13 Sentinels to life', 55000, 'https://images.squarespace-cdn.com/content/v1/5aa9b09612b13f9aecc1613a/1588118911531-OYHR79XP96H9TX17N5M7/SENTINELS+x+VALORANT?format=1000w', true, 13);
