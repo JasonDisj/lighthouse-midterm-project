@@ -16,3 +16,9 @@ body {
     rgb(125, 79, 27) 100%
   );
 }
+
+#main-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

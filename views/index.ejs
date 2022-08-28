@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
   <link rel="stylesheet" href="/styles/nav.css" />
+  <link rel="stylesheet" href="/styles/search.css" />
+  <link rel="stylesheet" href="/styles/headers.css" />
 
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script defer src="/scripts/app.js"></script>
@@ -23,14 +25,14 @@
     <div id="navlogo">
       <span><a href="http://localhost:8080"><img
             src="https://fontmeme.com/permalink/220827/af0c2ad64ef606ff785badeebe948d07.png"></a></span>
-          </div>
+    </div>
 
-      <div id="navbarlinks" class="nav-bar-links">
-        <a href="/">Home&nbsp;&nbsp;</a>
-        <a href="">Favourites&nbsp;&nbsp;</a>
-        <a href="">Log in&nbsp;&nbsp;</a>
-        <a href="">Sign Up</a>
-      </div>
+    <div id="navbarlinks" class="nav-bar-links">
+      <a href="/" style="text-decoration: none;">Home&nbsp;&nbsp;</a>
+      <a href="" style="text-decoration: none;">Favourites&nbsp;&nbsp;</a>
+      <a href="" style="text-decoration: none;">Log in&nbsp;&nbsp;</a>
+      <a href="" style="text-decoration: none;">Sign Up</a>
+    </div>
   </nav>
 
   <h1>Buy and sell your favourite video games!</h1>
@@ -39,36 +41,36 @@
 
   <form method="get" id="search_video_game_listings">
     <div class="search-form">
-      <label for="search-listing">Name</label>
+      <label for="search-listing">Name:</label>
       <input type="text" name="search" placeholder="Search Video Games">
     </div>
 
     <div class="search-by-price">
-      <label for="search-by-lowest-price">Lowest Price</label>
+      <label for="search-by-lowest-price">Lowest Price:</label>
       <input type="number" name="lowest-price" placeholder="Lowest Price"><br>
-      <label for="search-by-highest-price">Highest Price</label>
+      <label for="search-by-highest-price">Highest Price:</label>
       <input type="number" name="highest-price" placeholder="Highest Price">
     </div>
     <div class="search-by-rating">
-      <label for="search-by-minimum-review">Lowest Review</label>
+      <label for="search-by-minimum-review">Lowest Review:</label>
       <input type="number" name="minimum-review" placeholder="Lowest Review">
 
     </div>
-    <button class="search-button" type="submit">Search</button>
+    <button id="search" type="submit">Search</button>
   </form>
+  <div id="main-features">
+    <div class="feature-1">
+      <h3>Feature Item 1&emsp;&emsp;</h3><br>
+    </div>
 
-  <div class="feature-1">
-    <h3>Feature Item 1</h3><br>
+    <div class="feature-2">
+      <h3>Feature Item 2&emsp;&emsp;</h3><br>
+    </div>
+
+    <div class="feature-3">
+      <h3>Feature Item 3&emsp;&emsp;</h3><br>
+    </div>
   </div>
-
-  <div class="feature-2">
-    <h3>Feature Item 2</h3><br>
-  </div>
-
-  <div class="feature-3">
-    <h3>Feature Item 3</h3><br>
-  </div>
-
 
 
 
