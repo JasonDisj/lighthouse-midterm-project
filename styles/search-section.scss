@@ -1,17 +1,17 @@
 .buy-and-sell {
   font-family: "New Super Mario Font U", sans-serif;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 42px;
 }
 
 #search-section {
   margin-top: 20px;
-  font-family: Arial;
+  font-family: "New Super Mario Font U", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .search-form {
@@ -42,8 +42,8 @@
   color: white;
   background-color: rgb(29, 155, 240);
   border: none;
-  height: 40px;
-  width: 80px;
+  height: 46px;
+  width: 100px;
   border-radius: 3px;
   font-weight: bold;
   cursor: pointer;
