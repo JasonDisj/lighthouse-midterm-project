@@ -5,8 +5,40 @@
   column-gap: 120px; */
   margin-top: 34px;
   font-family: "New Super Mario Font U", sans-serif;
-  font-size: 25px;
+  font-size: 32px;
   display: flex;
-  justify-content: space-around;
-  column-gap: 150px;
+  column-gap: 80px;
+}
+
+.new-games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+}
+
+.hot-buys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+}
+
+.going-gone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+}
+
+.game-1-pic {
+  width: 300px;
+}
+
+.game-2-pic {
+  height: 260px;
+}
+
+.game-3-pic {
+  width: 300px;
 }
