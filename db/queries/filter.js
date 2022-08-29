@@ -2,6 +2,8 @@ const db = require('../connection');
 
 const getFilteredListings = options => {
 
+  // console.log(options);
+
   const queryParams = [];
 
   let queryString = `
@@ -11,26 +13,28 @@ const getFilteredListings = options => {
   WHERE 1 = 1
   `;
 
-  if (options.name) {
-    queryParams.push(`%${options.name}%`);
-    queryString += ` AND name ILIKE $${queryParams.length} `;
-  }
+  if (options !== undefined) {
 
-  if (options.maximum_price) {
-    queryParams.push(`${options.maximum_price}`);
-    queryString += ` AND price <= $${queryParams.length} `;
-  }
+    if (options.name) {
+      queryParams.push(`%${options.name}%`);
+      queryString += ` AND name ILIKE $${queryParams.length} `;
+    }
 
-  if (options.minimum_rating) {
-    queryParams.push(`${options.minimum_rating}`);
-    queryString += ` AND rating >= $${queryParams.length} `;
-  }
+    if (options.maximum_price) {
+      queryParams.push(`${options.maximum_price}`);
+      queryString += ` AND price <= $${queryParams.length} `;
+    }
 
-  queryString += `
+    if (options.minimum_rating) {
+      queryParams.push(`${options.minimum_rating}`);
+      queryString += ` AND rating >= $${queryParams.length} `;
+    }
+
+    queryString += `
   ORDER BY price
   `;
-
-  return pool.query(queryString, queryParams)
+  }
+  return db.query(queryString, queryParams)
     .then((res) => res.rows)
     .catch((err) => {
       console.log(err.message);
