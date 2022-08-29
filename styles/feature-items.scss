@@ -8,6 +8,7 @@
   font-size: 32px;
   display: flex;
   column-gap: 80px;
+
 }
 
 .new-games {
@@ -15,6 +16,10 @@
   flex-direction: column;
   align-items: center;
   font-size: 28px;
+  border-radius: 25px;
+  border: 2px solid #080808;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hot-buys {
@@ -22,6 +27,10 @@
   flex-direction: column;
   align-items: center;
   font-size: 28px;
+  border-radius: 25px;
+  border: 2px solid #080808;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .going-gone {
@@ -29,6 +38,10 @@
   flex-direction: column;
   align-items: center;
   font-size: 28px;
+  border-radius: 25px;
+  border: 2px solid #080808;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .game-1-pic {
@@ -42,3 +55,4 @@
 .game-3-pic {
   width: 300px;
 }
+
