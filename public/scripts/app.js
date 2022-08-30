@@ -8,11 +8,10 @@ $(document).ready(() => {
     <img class="game-1-pic"
       src="${gameData.cover_photo_url}">
     <h3>$ ${gameData.price.toFixed(2)}</h3>
-    <h3>&#11088&#11088&#11088&#11088&#11088</h3>
+    <h3>${gameData.rating}&#11088</h3>
     <p>${gameData.description}</p>
   </div>`
   }
-
 
   $('#search_video_game_listings').submit(function (event) {
     event.preventDefault();

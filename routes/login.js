@@ -1,26 +1,19 @@
-// const express = require('express');
-// const router = express.Router();
+const express = require('express');
+const router = express.Router();
+const { getUsers } = require('../db/queries/admin')
 
-// module.exports = (db) => {
-//   router.get('/:user_id', (req, res) => {
+router.get('/:user_id', (req, res) => {
 
-//     const userId = req.params.user_id;
-//     req.session.user_id = userId;
+  getUsers(req.params.user_id)
 
-//     db.query(`
-//   SELECT name
-//   FROM users
-//   WHERE id = $1`,
-//       [userId])
-//       .then(data => {
-//         const username = data.rows[0];
-//         req.session.username = username;
-//         res.redirect('/')
-//       })
+  const userId = req.params.user_id;
+  req.session.user_id = userId;
+      .then(data => {
+    const username = data.rows[0];
+    req.session.username = username;
+    res.redirect('/')
+  })
 
-//   });
-//   return router;
-// }
+});
 
-
-// do this instead
+module.exports = router;

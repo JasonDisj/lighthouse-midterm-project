@@ -2,7 +2,7 @@ const db = require('../connection');
 
 const getFilteredListings = options => {
 
-  // console.log(options);
+  // console.log('b', options);
 
   const queryParams = [];
 
