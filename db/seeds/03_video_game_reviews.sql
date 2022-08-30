@@ -12,3 +12,14 @@ INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VAL
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (10, 12, 4, 'Solid game with beautiful graphics and a compelling story. However, the controls could use some improvements.');
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (4, 13, 4, 'There is only so much one person can do.');
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (1, 14, 4, 'Make me feel like I am transported to another world.');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (11, 1, 4, 'Wonderful game, spent hours playing this game!');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (12, 4, 5, 'Could not put this game down, my sleep schedule suffered');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (15, 2, 3, 'Difficult game, enjoyed most of it but got stuck a lot, would recommend for hardcore gamers.');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (16, 3, 5, 'Hooked from the start, buy this now you will not regret it!');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (18, 6, 2, 'Felt the game was overpriced for the enjoyment I got out of this.');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (19, 1, 4, 'My friends and I were engulfed in the story!  So great!');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (20, 10, 1, 'This game could not keep my interest. Was expecting more, not for me!');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (21, 6, 5, 'Best game I have played in years. BUY THIS IMMEDIATELY for hours of entertainment');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (22, 9, 2, 'Just ok, got bored very quickly of the gameplay.');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (24, 12, 5, 'AMAZING!  Cannot put into words how much enjoyment this game brought me!');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (25, 7, 5, 'Played all night and all day for hours.  Love every aspect of this game!');
