@@ -8,6 +8,6 @@ CREATE TABLE video_game_listings (
   description TEXT,
   price INTEGER NOT NULL,
   cover_photo_url TEXT NOT NULL,
-  is_stocked BOOLEAN NOT NULL DEFAULT TRUE,
+  is_stocked BOOLEAN DEFAULT TRUE,
   admin_id INTEGER REFERENCES users(id) ON DELETE CASCADE
 );

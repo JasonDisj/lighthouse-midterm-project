@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Add</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+
+  <script src="/vendor/jquery-3.0.0.js"></script>
+  <script defer src="/scripts/users.js"></script>
+</head>
+
+<body>
+  <h1>Add new video game listing</h1>
+  <form method="POST" action="/api/add" id="newListing">
+    <div class="newName">
+      <label for="add-name">Game Name:</label>
+      <input type="text" name="name" placeholder="Name">
+    </div>
+
+    <div class="newCompany">
+      <label for="add-company">Company Name</label>
+      <input type="text" name="company" placeholder="Company">
+    </div>
+    <div class="newPlatform">
+      <label for="add-platform">Platform</label>
+      <input type="text" name="platform" placeholder="Platform">
+
+    </div>
+
+    <div class="newDescription">
+      <label for="add-description">Description</label>
+      <input type="text" name="description" placeholder="Description">
+    </div>
+
+    <div class="newPrice">
+      <label for="add-price">Price</label>
+      <input type="number" name="price" placeholder="Price">
+    </div>
+
+    <div class="newPhoto">
+      <label for="add-photo">Cover Photo URL</label>
+      <input type="text" name="cover_photo_url" placeholder="URL">
+    </div>
+
+    <button class="add-button" type="submit">Add</button>
+
+  </form>
+</body>
+
+</html>

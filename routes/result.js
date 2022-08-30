@@ -1,9 +1,10 @@
 const express = require('express');
-const router  = express.Router();
-const filteredQueries = require('../db/queries/filter');
+const router = express.Router();
+const { getFilteredListings } = require('../db/queries/filter');
 
 router.get('/', (req, res) => {
-  filteredQueries.getFilteredListings()
+  // console.log(req.query);
+  getFilteredListings(req.query)
     .then(games => {
       res.json({ games });
     })

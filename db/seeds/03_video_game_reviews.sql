@@ -8,7 +8,7 @@ INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VAL
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (17, 8, 5, 'You do not have to save the world to find meaning in life... Sometimes, all you need is something simple, like this game.');
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (6, 9, 1, 'The most horrible game I have ever played...');
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (13, 10, 5, 'Some people are born to be monsters. Some jobs, only a monster can do.');
-INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (6, 11, 3, 'Kinda fun but I will not play again.');
-INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (4, 12, 4, 'Solid game with beautiful graphics and a compelling story. However, the controls could use some improvements.');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (7, 11, 3, 'Kinda fun but I will not play again.');
+INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (10, 12, 4, 'Solid game with beautiful graphics and a compelling story. However, the controls could use some improvements.');
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (4, 13, 4, 'There is only so much one person can do.');
 INSERT INTO video_game_reviews (video_game_id, customer_id, rating, comment) VALUES (1, 14, 4, 'Make me feel like I am transported to another world.');

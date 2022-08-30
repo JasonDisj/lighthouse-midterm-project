@@ -43,11 +43,11 @@
 
 
 
-  <form method="get" id="search_video_game_listings">
+  <form id="search_video_game_listings">
     <div id="search-section">
       <div class="search-form">
         <label for="search-listing">Name:</label>
-        <input type="text" name="search" placeholder="&#127918">
+        <input type="text" name="name" placeholder="&#127918">
       </div>
 
 
@@ -55,11 +55,11 @@
         <!-- <label for="search-by-lowest-price">Lowest Price</label>
         <input type="number" name="lowest-price" placeholder="Lowest Price"><br> -->
         <label for="search-by-highest-price">Highest Price</label>
-        <input type="number" name="highest-price" placeholder="&#128176">
+        <input type="number" name="maximum_price" placeholder="&#128176">
       </div>
       <div class="search-by-rating">
         <label for="search-by-minimum-review">Lowest Rating</label>
-        <input type="number" name="minimum-review" placeholder="&#11088">
+        <input type="number" name="minimum_rating" placeholder="&#11088">
 
       </div>
       <button class="search-button" type="submit">Search</button>
@@ -67,6 +67,8 @@
 
   </form>
 
+
+  <div id="results-container"></div>
 
   <div id="feature-items">
     <div class="new-games">
