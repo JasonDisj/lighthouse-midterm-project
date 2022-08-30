@@ -10,6 +10,8 @@ $(document).ready(() => {
     <h3>$ ${gameData.price.toFixed(2)}</h3>
     <h3>${gameData.rating}&#11088</h3>
     <p>${gameData.description}</p>
+    <input type="hidden" name="id" value=${gameData.id}>
+    <button class="fav-button">Add to favourite</button>
   </div>`
   }
 
@@ -33,6 +35,19 @@ $(document).ready(() => {
         }
       })
   })
+
+
+  $('#results-container').on('click', '.fav-button', function (event) {
+    $.post('/api/favourites', { favouriteGame: $(this).siblings("input").val() }
+    )
+      .then(
+        console.log
+      )
+  })
+
+
+
+
 
 
   const favouriteGameElement = function (gameData) {

@@ -4,8 +4,9 @@ const { favouriteListing } = require('../db/queries/favourites');
 
 router.post('/', (req, res) => {
   // console.log(req.query);
-  // console.log(req.body);
-  favouriteListing(req.body)
+  console.log(req.body);
+
+  favouriteListing(req.body.favouriteGame, req.session.user_id.id)
     .then(game => {
       res.json({ game });
     })
@@ -15,7 +16,7 @@ router.post('/', (req, res) => {
         .json({ error: err.message });
     });
 
-    // res.redirect('/');
+  // res.redirect('/');
 });
 
 router.get('/', (req, res) => {

@@ -1,14 +1,11 @@
 const db = require('../connection');
 
 
-const favouriteListing = function(favouriteGame) {
+const favouriteListing = function(favouriteGame, customer_id) {
   return db
-    .query(`INSERT INTO favourites (customer_id, video_game_id)
-    SELECT users.id, video_game_listings.id FROM video_game_listings
-    JOIN users ON users.id = video_game_listings.id
-    WHERE video_game_listings.name ILIKE '%
+    .query(`INSERT INTO favourites (customer_id, video_game_id) VALUES
     ($1, $2) RETURNING *;`,
-      [favouriteGame.customer_id, favouriteGame.video_game_id])
+      [customer_id, favouriteGame])
     .then((result) => {
       return result.rows[0];
     })

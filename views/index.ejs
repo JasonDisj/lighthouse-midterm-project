@@ -22,8 +22,8 @@
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script defer src="/scripts/app.js"></script>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/504ea4f88f.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/504ea4f88f.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -37,12 +37,13 @@
     <div id="navbarlinks" class="nav-bar-links">
       <a href="/" style="text-decoration: none;">Home&nbsp;&nbsp;</a>
       <a href="/api/favourites" style="text-decoration: none;" class="favourite">Favourites&nbsp;&nbsp;</a>
-      <% if (!user.isAdmin) { %>
-
-
-        <a href="" style="text-decoration: none;">Log in&nbsp;&nbsp;</a>
-        <a href="" style="text-decoration: none;">Sign Up</a>
+      <% if (user && user.is_admin) { %>
+        <a href="/api/add" style="text-decoration: none;" class="addList">New Listing&nbsp;&nbsp;</a>
         <% } %>
+          <% if (!user) { %>
+            <a href="" style="text-decoration: none;">Log in&nbsp;&nbsp;</a>
+            <a href="" style="text-decoration: none;">Sign Up</a>
+            <% } %>
     </div>
   </nav>
 

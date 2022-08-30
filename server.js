@@ -60,7 +60,12 @@ app.use('/api/login', loginRoutes);
 // Separate them into separate routes files (see above).
 
 app.get('/', (req, res) => {
-  const templateVar = { user: { isAdmin: false } };
+
+  const userCookie = req.session.user_id;
+  let templateVar = { user: null };
+  if (userCookie) {
+    templateVar = { user: userCookie }
+  }
   res.render('index', templateVar);
 });
 
