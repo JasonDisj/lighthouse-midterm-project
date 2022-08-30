@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Add</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+
+  <script src="/vendor/jquery-3.0.0.js"></script>
+  <script defer src="/scripts/users.js"></script>
+</head>
+
+<body>
+  <h1>Add your favourite video game</h1>
+  <form method="POST" action="/api/favourites" id="newFavourite">
+    <div class="favouriteName">
+      <label for="fav-name">Game Name:</label>
+      <input type="text" name="name" placeholder="Name">
+    </div>
+
+    <button class="fav-button" type="submit">Add</button>
+
+  </form>
+</body>
+
+</html>

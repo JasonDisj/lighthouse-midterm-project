@@ -5,7 +5,7 @@ require('dotenv').config();
 const sassMiddleware = require('./lib/sass-middleware');
 const express = require('express');
 const morgan = require('morgan');
-// const cookieSession = require('cookie-session');
+const cookieSession = require('cookie-session');
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -26,6 +26,10 @@ app.use(
   })
 );
 app.use(express.static('public'));
+app.use(cookieSession({
+  name: 'Mario',
+  keys: ['123', '456']
+}));
 
 // Separated Routes for each Resource
 // Note: Feel free to replace the example routes below with your own
@@ -34,6 +38,9 @@ const widgetApiRoutes = require('./routes/widgets-api');
 const usersRoutes = require('./routes/users');
 const filterRoutes = require('./routes/result');
 const addRoutes = require('./routes/add');
+// const { getUsers } = require('./db/queries/admin');
+const favouriteRoutes = require('./routes/favour')
+const loginRoutes = require('./routes/login');
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
@@ -43,6 +50,8 @@ app.use('/api/widgets', widgetApiRoutes);
 app.use('/users', usersRoutes);
 app.use('/api/result', filterRoutes);
 app.use('/api/add', addRoutes);
+app.use('/api/favourites', favouriteRoutes);
+app.use('/api/login', loginRoutes);
 
 // Note: mount other resources here, using the same pattern above
 
@@ -51,8 +60,28 @@ app.use('/api/add', addRoutes);
 // Separate them into separate routes files (see above).
 
 app.get('/', (req, res) => {
-  res.render('index');
+  const templateVar = { user: { isAdmin: false } };
+  res.render('index', templateVar);
 });
+
+app.get("/login", (req, res) => {
+
+  res.render("login");
+});
+
+app.post("/login", (req, res) => {
+
+  // const adminUser = getUsers();
+  // if (!adminUser) {
+  //   res.render('/');
+  // }  add or delete
+  // console.log(req.body);
+  if (req.session.user_id === req.body.id) {
+    res.redirect('/')
+  }
+
+});
+
 
 
 app.listen(PORT, () => {

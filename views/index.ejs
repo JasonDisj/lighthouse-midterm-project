@@ -32,10 +32,13 @@
 
     <div id="navbarlinks" class="nav-bar-links">
       <a href="/" style="text-decoration: none;">Home&nbsp;&nbsp;</a>
-      <a href="" style="text-decoration: none;">Favourites&nbsp;&nbsp;</a>
-      <a href="" style="text-decoration: none;">Log in&nbsp;&nbsp;</a>
-      <a href="" style="text-decoration: none;">Sign Up</a>
+      <a href="/api/favourites" style="text-decoration: none;" class="favourite">Favourites&nbsp;&nbsp;</a>
+      <% if (!user.isAdmin) { %>
 
+
+        <a href="" style="text-decoration: none;">Log in&nbsp;&nbsp;</a>
+        <a href="" style="text-decoration: none;">Sign Up</a>
+        <% } %>
     </div>
   </nav>
 

@@ -1,10 +1,10 @@
 const db = require('../connection');
 
-const getUsers = () => {
+const getUsers = (id) => {
   return db
-    .query('SELECT name FROM users WHERE is_admin = TRUE;')
+    .query('SELECT * FROM users WHERE id = $1;', [id])
     .then((result) => {
-      return result.rows;
+      return result.rows[0];
     })
     .catch((err) => {
       console.log('error', err);

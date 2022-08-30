@@ -35,13 +35,37 @@ $(document).ready(() => {
   })
 
 
-  $('#newlisting').submit(function (event) {
+  const favouriteGameElement = function (gameData) {
+    return `<div class="new-games">
+    <h3>${gameData.name}</h3>
+    <img class="game-1-pic"
+      src="${gameData.cover_photo_url}">
+    <h3>$ ${gameData.price.toFixed(2)}</h3>
+    <h3>${gameData.rating}&#11088</h3>
+    <p>${gameData.description}</p>
+  </div>`
+  }
+
+  $('#favourite').submit(function (event) {
     event.preventDefault();
 
+    const formData = $(this).serialize(); // serialize return obj
+    console.log(formData);
+
+    $.ajax('/api/favourites', {
+
+      method: 'GET',  // http method
+      data: formData  // data to submit
+
+    })
+      .then(function (results) {
+        $('#results-container').html(" ");
+        console.log(results);
+        for (let item of results.games) {
+          $('#results-container').append(favouriteGameElement(item));
+        }
+      })
   })
-
-
-
 
 
 })
