@@ -1,11 +1,12 @@
 const db = require('../connection');
 
 // ADMIN: delete a listing
-const deleteListing = (deletedGame, userId) => {
+const markAsSold = (gameId, userId) => {
   return db
-    .query(`DELETE FROM video_game_listings
+    .query(`UPDATE video_game_listings
+    SET is_stocked = FALSE
     WHERE video_game_listings.id = $1
-    AND video_game_listings.admin_id = $2;`, [deletedGame, userId]
+    AND video_game_listings.admin_id = $2;`, [gameId, userId]
     )
     .then((result) => {
       return result;
@@ -15,4 +16,4 @@ const deleteListing = (deletedGame, userId) => {
     })
 }
 
-module.exports = { deleteListing };
+module.exports = { markAsSold };

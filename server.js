@@ -39,8 +39,11 @@ const usersRoutes = require('./routes/users');
 const filterRoutes = require('./routes/result');
 const addRoutes = require('./routes/add');
 // const { getUsers } = require('./db/queries/admin');
-const favouriteRoutes = require('./routes/favour')
+const favouriteRoutes = require('./routes/favour');
 const loginRoutes = require('./routes/login');
+const soldRoutes = require('./routes/sold');
+const listingRoutes = require('./routes/listing');
+const deleteRoutes = require('./routes/delete');
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
@@ -52,6 +55,9 @@ app.use('/api/result', filterRoutes);
 app.use('/api/add', addRoutes);
 app.use('/api/favourites', favouriteRoutes);
 app.use('/api/login', loginRoutes);
+app.use('/api/sold', soldRoutes);
+app.use('/api/listing', listingRoutes);
+app.use('/api/delete', deleteRoutes);
 
 // Note: mount other resources here, using the same pattern above
 
@@ -76,11 +82,6 @@ app.get("/login", (req, res) => {
 
 app.post("/login", (req, res) => {
 
-  // const adminUser = getUsers();
-  // if (!adminUser) {
-  //   res.render('/');
-  // }  add or delete
-  // console.log(req.body);
   if (req.session.user_id === req.body.id) {
     res.redirect('/')
   }

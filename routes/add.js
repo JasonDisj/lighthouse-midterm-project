@@ -11,7 +11,7 @@ router.use((req, res, next) => {
 })
 
 router.post('/', (req, res) => {
-  addListing(req.body)
+  addListing(req.body, req.session.user_id.id)
     .then(game => {
       res.json({ game });
     })
@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
         .json({ error: err.message });
     });
 
-    res.redirect('/');
+    res.redirect('/api/listing');
 });
 
 router.get('/', (req, res) => {

@@ -39,16 +39,28 @@ $(document).ready(() => {
   })
 
 
-  // $('#results-container').on('click', '.fav-button', function (event) {
-  //   $.post('/api/favourites', { favouriteGame: $(this).siblings("input").val() }
-  //   )
-  //     .then(
-  //       console.log
-  //     )
-  // })
+
+  $('.sold').click(function (event) {
+
+    $.post('/api/sold', {
+      gameId: $(event.target).data("gameId")
+    })
+      .then((results) => {
+        console.log('res', results);
+      })
+  })
 
 
 
+  $('.delete').click(function (event) {
+
+    $.post('/api/delete', {
+      gameId: $(event.target).data("gameId")
+    })
+      .then(() => {
+        window.location.replace('/api/listing');
+      })
+  })
 
 
 

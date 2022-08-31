@@ -11,6 +11,7 @@ const getFilteredListings = options => {
   FROM video_game_reviews
   RIGHT JOIN video_game_listings ON video_game_reviews.video_game_id = video_game_listings.id
   WHERE 1 = 1
+  AND is_stocked = TRUE
   `;
 
     if (options.name !== "") {
