@@ -1,14 +1,10 @@
 #feature-items {
-  /* margin-top: 34px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 120px; */
-  margin: 30px;
+  margin-top: 34px;
   font-family: "New Super Mario Font U", sans-serif;
   font-size: 32px;
   display: flex;
   column-gap: 80px;
-
+  text-align: center;
 }
 
 .new-games {
@@ -17,7 +13,7 @@
   align-items: center;
   font-size: 28px;
   border-radius: 25px;
-  border: 2px solid #080808;
+  border: 3px solid rgb(29, 155, 240);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -28,7 +24,7 @@
   align-items: center;
   font-size: 28px;
   border-radius: 25px;
-  border: 2px solid #080808;
+  border: 3px solid rgb(29, 155, 240);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -39,7 +35,7 @@
   align-items: center;
   font-size: 28px;
   border-radius: 25px;
-  border: 2px solid #080808;
+  border: 3px solid rgb(29, 155, 240);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
