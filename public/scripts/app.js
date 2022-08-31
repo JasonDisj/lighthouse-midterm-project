@@ -3,7 +3,7 @@
 $(document).ready(() => {
 
   const createGameElement = function (gameData) {
-    return `<div class="new-games">
+    return `<div class="searched-games">
     <h3>${gameData.name}</h3>
     <img class="game-1-pic"
       src="${gameData.cover_photo_url}">

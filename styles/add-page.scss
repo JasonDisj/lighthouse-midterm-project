@@ -1,0 +1,83 @@
+#newListing {
+  margin-top: 20px;
+  font-family: "New Super Mario Font U", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.add-page-header {
+  font-family: "New Super Mario Font U", sans-serif;
+}
+
+.newName {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newCompany {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newPlatform {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newDescription {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newPrice {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newPhoto {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  margin-top: 5px;
+  color: white;
+  background-color: rgb(29, 155, 240);
+  border: none;
+  height: 46px;
+  width: 100px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.15s,
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
+
+.add-button:active {
+  opacity: 0.5;
+}
