@@ -4,10 +4,10 @@ This is a mock version of craig's list or kijiji.  Buy and Sell your favourite v
 
 ## Final Product
 
-!["Home Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/home.png?raw=true))
-!["Favourites Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/favourites.png?raw=true))
-!["Add Listings Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/newlisting.png?raw=true))
-!["My Listings Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/mylistings.png?raw=true))
+!["Home Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/home.png?raw=true)
+!["Favourites Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/favourites.png?raw=true)
+!["Add Listings Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/newlisting.png?raw=true)
+!["My Listings Page"](https://github.com/JasonDisj/lighthouse-midterm-project/blob/master/docs/mylistings.png?raw=true)
 
 
 
