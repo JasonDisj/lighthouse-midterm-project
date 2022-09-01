@@ -7,9 +7,11 @@ const deleteListing = (deletedGame, userId) => {
     WHERE video_game_listings.id = $1
     AND video_game_listings.admin_id = $2;`, [deletedGame, userId]
     )
+
     .then((result) => {
       return result;
     })
+
     .catch((err) => {
       console.log('error', err);
     })
