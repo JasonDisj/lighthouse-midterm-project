@@ -8,7 +8,7 @@ $(document).ready(() => {
     <img class="game-1-pic"
       src="${gameData.cover_photo_url}">
     <h3>$ ${gameData.price.toFixed(2)}</h3>
-    <h3>${gameData.rating}&#11088</h3>
+    <h3>${gameData.rating?gameData.rating+'&#11088':'No ratings available'}</h3>
     <p>${gameData.description}</p>
     <form id="favourite">
     <div id="fav-email">
