@@ -1,6 +1,7 @@
 const db = require('../connection');
 
-// ADMIN: show all listings
+// ADMIN: show his own listings
+
 const myListings = (userId) => {
   return db
     .query(`SELECT video_game_listings.*, users.name AS user_name FROM video_game_listings
@@ -8,10 +9,12 @@ const myListings = (userId) => {
     WHERE admin_id = $1
     ORDER BY video_game_listings.id DESC;`, [userId]
     )
+
     .then((result) => {
       console.log(result.rows[0]);
       return result.rows;
     })
+
     .catch((err) => {
       console.log('error', err);
     })
