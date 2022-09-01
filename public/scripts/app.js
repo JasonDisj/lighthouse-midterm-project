@@ -8,7 +8,7 @@ $(document).ready(() => {
     <img class="game-1-pic"
       src="${gameData.cover_photo_url}">
     <h3>$ ${gameData.price.toFixed(2)}</h3>
-    <h3>${gameData.rating?gameData.rating+'&#11088':'No ratings available'}</h3>
+    <h3>${gameData.rating ? gameData.rating + '&#11088' : 'No ratings available'}</h3>
     <p>${gameData.description}</p>
     <form id="favourite">
     <div id="fav-email">
@@ -36,7 +36,6 @@ $(document).ready(() => {
     })
       .then(function (results) {
         $('#results-container').html(" ");
-        // console.log(results);
         for (let item of results.games) {
           $('#results-container').append(createGameElement(item));
         }
@@ -77,9 +76,8 @@ $(document).ready(() => {
 
     $.ajax('/api/favourites', {
 
-      method: 'POST',  // http method
-      data: formData  // data to submit
-
+      method: 'POST',
+      data: formData
     })
       .then(function (results) {
         window.location.replace('/api/favourites');
@@ -92,11 +90,10 @@ $(document).ready(() => {
 
     event.preventDefault();
 
-
     $.ajax('/api/favourites', {
 
-      method: 'POST',  // http method
-      data: formData  // data to submit
+      method: 'POST',
+      data: formData
 
     })
       .then(function (results) {
