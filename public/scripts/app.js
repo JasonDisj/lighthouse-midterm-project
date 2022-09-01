@@ -14,6 +14,9 @@ $(document).ready(() => {
     <input type="hidden" name="gameId" value=${gameData.id}>
     <button type="submit" class="fav-button">Add to favourite</button>
     </form>
+    <form action='/api/email/${gameData.admin_id}' method=POST>
+    <button type="submit" class="email-button">Email me</button>
+    </form>
   </div>`
   }
 
@@ -46,7 +49,7 @@ $(document).ready(() => {
       gameId: $(event.target).data("gameId")
     })
       .then((results) => {
-        console.log('res', results);
+        $('#alert').text(results);
       })
   })
 
@@ -65,7 +68,7 @@ $(document).ready(() => {
 
 
   $('body').on('submit', '#favourite', function (event) {
-    console.log('b');
+
     event.preventDefault();
 
     const formData = $(this).serialize(); // serialize return obj
@@ -83,5 +86,21 @@ $(document).ready(() => {
   })
 
 
+
+  $('body').on('submit', 'email-button', function (event) {
+
+    event.preventDefault();
+
+
+    $.ajax('/api/favourites', {
+
+      method: 'POST',  // http method
+      data: formData  // data to submit
+
+    })
+      .then(function (results) {
+        window.location.replace('/api/favourites');
+      })
+  })
 
 })

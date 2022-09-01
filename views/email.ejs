@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Email me</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="http://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+
+  <script src="/vendor/jquery-3.0.0.js"></script>
+  <script defer src="/scripts/users.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div id="navlogo">
+      <span><a href="http://localhost:8080"><img
+            src="https://fontmeme.com/permalink/220827/af0c2ad64ef606ff785badeebe948d07.png"></a></span>
+    </div>
+  </nav>
+
+  <form action="mailto:<%= email %>" method="POST" enctype="multipart/form-data" name="EmailForm">
+    Send an email:<br>
+    <textarea name=" " rows="6" cols="20">
+    </textarea><br><br>
+    <button type="submit" value="Submit">Send</button>
+  </form>
+</body>
+
+</html>

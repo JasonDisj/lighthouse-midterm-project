@@ -3,7 +3,7 @@ const router = express.Router();
 const { markAsSold } = require('../db/queries/sold');
 
 router.post('/', (req, res) => {
-  // console.log(req.query);
+
   markAsSold(req.body.gameId, req.session.user_id.id)
     .then(() => {
 

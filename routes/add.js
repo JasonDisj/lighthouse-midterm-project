@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
         .json({ error: err.message });
     });
 
-    res.redirect('/api/listing');
+  res.redirect('/api/listing');
 });
 
 router.get('/', (req, res) => {

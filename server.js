@@ -44,6 +44,7 @@ const loginRoutes = require('./routes/login');
 const soldRoutes = require('./routes/sold');
 const listingRoutes = require('./routes/listing');
 const deleteRoutes = require('./routes/delete');
+const emailRoutes = require('./routes/email');
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
@@ -58,6 +59,7 @@ app.use('/api/login', loginRoutes);
 app.use('/api/sold', soldRoutes);
 app.use('/api/listing', listingRoutes);
 app.use('/api/delete', deleteRoutes);
+app.use('/api/email', emailRoutes);
 
 // Note: mount other resources here, using the same pattern above
 

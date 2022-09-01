@@ -18,5 +18,4 @@ let templateVar = {};
 
 });
 
-
 module.exports = router;
