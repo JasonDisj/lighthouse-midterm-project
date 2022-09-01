@@ -1,6 +1,6 @@
 
 INSERT INTO video_game_listings (name, company, platform, description, price, cover_photo_url, is_stocked, admin_id) VALUES
-('Pokémon Legends: Arceus', 'Nintendo', 'Switch', 'Pokémon did not necessarily need to change. This game is sold extraordinarily well.', 51.00, 'https://www.videogameschronicle.com/files/2021/08/pokemon-legends-arceus-1024x578.jpg', TRUE, 3),
+('Pokemon Legends: Arceus', 'Nintendo', 'Switch', 'Pokemon did not necessarily need to change. This game is sold extraordinarily well.', 51.00, 'https://www.videogameschronicle.com/files/2021/08/pokemon-legends-arceus-1024x578.jpg', TRUE, 3),
 ('Rainbow 6 Extraction', 'Ubisoft', 'PlayStation 5', 'You remember what it is like to truly fear death in Extraction.', 12.00, 'https://cdn.mos.cms.futurecdn.net/KrWRL9o3zDChkxvEFDLRh7-970-80.jpg.webp', FALSE, 10),
 ('OlliOlli World', 'Private Division', 'Switch', 'What makes OlliOlli World uniquely memorable is its slacker-utopia aesthetic. Who would not want to live on a planet that can be navigated only by kickflips?', 30.00, 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_1100/ncom/en_US/games/switch/o/olliolli-world-switch/hero', TRUE, 1),
 ('Ghostwire: Tokyo', 'Bethesda Softworks', 'Windows PC', 'This is a game in which you will banish demons before stopping into an ersatz 7-Eleven for some health-restoring mochi.', 49.00, 'https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2022/03/ghostwire-tokyo-review-header.jpg?w=1280&ssl=1', TRUE, 6),

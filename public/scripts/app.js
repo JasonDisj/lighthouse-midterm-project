@@ -11,11 +11,13 @@ $(document).ready(() => {
     <h3>${gameData.rating}&#11088</h3>
     <p>${gameData.description}</p>
     <form id="favourite">
+    <div id="fav-email">
     <input type="hidden" name="gameId" value=${gameData.id}>
     <button type="submit" class="fav-button">Add to favourite</button>
     </form>
     <form action='/api/email/${gameData.admin_id}' method=POST>
     <button type="submit" class="email-button">Email me</button>
+    </div>
     </form>
   </div>`
   }

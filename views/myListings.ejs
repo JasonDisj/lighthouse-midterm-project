@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Favourites</title>
+  <title>My listings</title>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="/vendor/border-box.css" />
   <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
-  <link rel="stylesheet" href="/styles/favourite-page.css" />
   <link rel="stylesheet" href="/styles/nav.css" />
+  <link rel="stylesheet" href="/styles/my-listing.css" />
 
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script defer src="/scripts/users.js"></script>
@@ -50,25 +50,27 @@
   <div id="alert">
 
   </div>
-  <% for (let item of lists) { %>
-    <div class="new-games">
-      <div>
-        <h3>
-          <%= item.name %>
-        </h3>
-      </div>
-      <div><img class="game-1-pic" src='<%= item.cover_photo_url %>' </div>
+  <div class="my-listing">
+    <% for (let item of lists) { %>
+      <div class="new-games">
         <div>
-          <h3>$ <%= item.price %>
+          <h3>
+            <%= item.name %>
           </h3>
         </div>
-        <div>
-          <p>
-            <%= item.description %>
-          </p>
+        <div><img class="game-2-pic" src='<%= item.cover_photo_url %>' </div>
+          <div>
+            <h3>$ <%= item.price %>
+            </h3>
+          </div>
+          <div>
+            <p>
+              <%= item.description %>
+            </p>
+          </div>
         </div>
-        <button data-game-id="<%= item.id %>" class="sold">Mark As Sold</button>
-        <button data-game-id="<%= item.id %>" class="delete">Delete</button>
+        <button data-game-id="<%= item.id %>" id="sold">Mark As Sold</button>
+        <button data-game-id="<%= item.id %>" id="delete">Delete</button>
       </div>
 
       <% } %>

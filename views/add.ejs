@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Add</title>
+  <title>Add New Listings</title>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/vendor/border-box.css" />
   <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/nav.css" />
   <link rel="stylesheet" href="/styles/add-page.css" />
 
   <script src="/vendor/jquery-3.0.0.js"></script>
@@ -26,6 +27,14 @@
       <span><a href="http://localhost:8080"><img
             src="https://fontmeme.com/permalink/220827/af0c2ad64ef606ff785badeebe948d07.png"></a></span>
     </div>
+
+    <div id="navbarlinks" class="nav-bar-links">
+      <a href="/" style="text-decoration: none;">Home&nbsp;&nbsp;</a>
+      <a href="/api/favourites" style="text-decoration: none;" class="favourite">Favourites&nbsp;&nbsp;</a>
+      <a href="/api/listing" style="text-decoration: none;" class="myList">My Listings&nbsp;&nbsp;</a>
+      <a href="/api/add" style="text-decoration: none;" class="addList">New Listing&nbsp;&nbsp;</a>
+    </div>
+
   </nav>
 
   <h1 class="add-page-header">Add new video game listing</h1>
@@ -36,27 +45,27 @@
     </div>
 
     <div class="newCompany">
-      <label for="add-company">Company Name</label>
+      <label for="add-company">Company Name:</label>
       <input type="text" name="company" placeholder="Company">
     </div>
     <div class="newPlatform">
-      <label for="add-platform">Platform</label>
+      <label for="add-platform">Platform:</label>
       <input type="text" name="platform" placeholder="Platform">
 
     </div>
 
     <div class="newDescription">
-      <label for="add-description">Description</label>
+      <label for="add-description">Description:</label>
       <input type="text" name="description" placeholder="Description">
     </div>
 
     <div class="newPrice">
-      <label for="add-price">Price</label>
+      <label for="add-price">Price:</label>
       <input type="number" name="price" placeholder="Price">
     </div>
 
     <div class="newPhoto">
-      <label for="add-photo">Cover Photo URL</label>
+      <label for="add-photo">Cover Photo URL:</label>
       <input type="text" name="cover_photo_url" placeholder="URL">
     </div>
 
