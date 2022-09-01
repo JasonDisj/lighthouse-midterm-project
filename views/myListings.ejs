@@ -70,8 +70,10 @@
             </p>
           </div>
         </div>
-        <button data-game-id="<%= item.id %>" class="sold">Mark As Sold</button>
-        <button data-game-id="<%= item.id %>" class="delete">Delete</button>
+        <div class="sold-delete">
+          <button data-game-id="<%= item.id %>" class="sold">Mark As Sold</button>
+          <button data-game-id="<%= item.id %>" class="delete">Delete</button>
+        </div>
       </div>
 
       <% } %>
