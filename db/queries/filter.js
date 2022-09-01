@@ -1,8 +1,8 @@
 const db = require('../connection');
 
-const getFilteredListings = options => {
+// "search button" filters all conditions
 
-  // console.log('b', options);
+const getFilteredListings = options => {
 
   const queryParams = [];
 
@@ -14,22 +14,22 @@ const getFilteredListings = options => {
   AND is_stocked = TRUE
   `;
 
-    if (options.name !== "") {
-      queryParams.push(`%${options.name}%`);
-      queryString += ` AND name ILIKE $${queryParams.length} `;
-    }
+  if (options.name !== "") {
+    queryParams.push(`%${options.name}%`);
+    queryString += ` AND name ILIKE $${queryParams.length} `;
+  }
 
-    if (options.maximum_price !== "") {
-      queryParams.push(`${options.maximum_price}`);
-      queryString += ` AND price <= $${queryParams.length} `;
-    }
+  if (options.maximum_price !== "") {
+    queryParams.push(`${options.maximum_price}`);
+    queryString += ` AND price <= $${queryParams.length} `;
+  }
 
-    if (options.minimum_rating !== "") {
-      queryParams.push(`${options.minimum_rating}`);
-      queryString += ` AND rating >= $${queryParams.length} `;
-    }
+  if (options.minimum_rating !== "") {
+    queryParams.push(`${options.minimum_rating}`);
+    queryString += ` AND rating >= $${queryParams.length} `;
+  }
 
-    queryString += `
+  queryString += `
   ORDER BY price
   `;
 
