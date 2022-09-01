@@ -45,20 +45,19 @@ $(document).ready(() => {
 
 
 
-  $('#sold').click(function (event) {
+  $('.sold').click(function (event) {
 
     $.post('/api/sold', {
       gameId: $(event.target).data("gameId")
     })
       .then((results) => {
-        $('#alert').text(results);
+        $('#alert').hide().text(results).slideDown(1000).slideUp(3000);
       })
   })
 
 
 
-  $('#delete').click(function (event) {
-
+  $('.delete').click(function (event) {
     $.post('/api/delete', {
       gameId: $(event.target).data("gameId")
     })
