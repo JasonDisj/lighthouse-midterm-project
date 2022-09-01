@@ -68,7 +68,6 @@ app.use('/api/email', emailRoutes);
 // Separate them into separate routes files (see above).
 
 app.get('/', (req, res) => {
-
   const userCookie = req.session.user_id;
   let templateVar = { user: null };
   if (userCookie) {
@@ -78,19 +77,14 @@ app.get('/', (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-
   res.render("login");
 });
 
 app.post("/login", (req, res) => {
-
   if (req.session.user_id === req.body.id) {
     res.redirect('/')
   }
-
 });
-
-
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
