@@ -9,7 +9,7 @@ router.post('/', (req, res) => {
 
       // res.json(data);
 
-      res.send('Item updated to SOLD!');
+      res.send('Item updated to SOLD!'); // response
 
     })
     .catch(err => console.log(err));

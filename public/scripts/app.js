@@ -45,7 +45,7 @@ $(document).ready(() => {
 
 
 
-  $('.sold').click(function (event) {
+  $('#sold').click(function (event) {
 
     $.post('/api/sold', {
       gameId: $(event.target).data("gameId")
@@ -57,7 +57,7 @@ $(document).ready(() => {
 
 
 
-  $('.delete').click(function (event) {
+  $('#delete').click(function (event) {
 
     $.post('/api/delete', {
       gameId: $(event.target).data("gameId")
